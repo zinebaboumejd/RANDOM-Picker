@@ -1,13 +1,5 @@
 const etudiant = [
-    "Begdar",
-    "Touti",
-    "ABOUMEJD",
-    "Elazzab",
-    "Mellouki",
-    "zineb",
-    "somaya",
-    "amghare",
-    "fatimazzahra",
+    "Begdar","Touti","ABOUMEJD","Ziani","Benouahi","Laachari","Rabhi","ennadafy","belgazzar","Moultamiss","Basidi","Masioub","ELHADRi","Moussahif","Ait gaba","ATGUIRI","Rhrabla","AIT LASRI","Roussafi","Elazzab","Mellouki" ,"Nouhi","GRICH","zahaoui"
   ];
   
   const sujet = ["sujet1", "sujet2", "sujet3", "sujet4", "sujet5", "sujet6"];
@@ -108,7 +100,12 @@ const etudiant = [
     }
     
     
-    
-    
+    // fonction pour telecharger le tableau en format excel
+function Telecharger() {
+    var table = document.getElementById("table");
+    var html = table.outerHTML;
+    window.open("data:application/vnd.ms-excel," + encodeURIComponent(html));
+  }
+  
     
 
